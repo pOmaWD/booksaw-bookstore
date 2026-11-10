@@ -1,0 +1,21 @@
+:root{
+    --color-bg: #f3f2ed;
+    --color-bg-secondary: #eeebe4;
+
+    --color-accent: #776622;
+
+    --color-text: #2f2f2f;
+    --color-text-secondary: #757575;
+
+    --border: 1px solid currentColor;
+
+    --container-width: 1800px;
+    --container-padding-x: 15px;
+
+    --input-height: 45px;
+
+    --font-family-base: "Raleway", sans-serif;
+    --font-family-accent: "Prata", sans-serif;
+
+    --transition-duration: 0.2s;
+}
