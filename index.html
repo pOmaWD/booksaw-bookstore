@@ -17,9 +17,16 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__top">
+            <div class="header__top desktop-only">
                 <div class="container">
                     <div class="header__top-inner">
+                        <button type="button" class="burger header__mobile-burger" aria-label="Open menu">
+                                <img src="./assets/icons/menu-burger-icon.svg"
+                                class="burger__icon"
+                                width="25"
+                                height="25"
+                                loading="lazy">
+                        </button>
                         <ul class="social">
                             <li class="social__item">
                                 <a href="/">
@@ -118,6 +125,7 @@
             <div class="header__bottom">
                 <div class="container">
                     <div class="header__bottom-inner">
+
                         <a href="/" class="header__logo">
                             <img src="./assets/images/main-logo.png"
                             alt="Booksaw logo"
@@ -127,8 +135,9 @@
                             loading="lazy"
                             >
                         </a>
+
                         <div class="header__menu">
-                            <nav class="nav">
+                            <nav class="nav desktop-only">
                                 <ul class="nav__list">
                                     <li class="nav__item">
                                         <a href="/" class="nav__link nav__link--active">HOME</a>
@@ -150,6 +159,30 @@
                                     </li>
                                 </ul>
                             </nav>
+
+                            <ul class="user-actions mobile-only">
+                                <li class="user-actions__item">
+                                    <a href="/" class="user-actions__link">
+                                        <img src="./assets/icons/shopping-bag-iconp.svg"
+                                        class="user-actions__icon"
+                                        width="30"
+                                        height="30"
+                                        loading="lazy"
+                                        >
+                                    </a>
+                                </li>
+                                <li class="user-actions__item">
+                                    <button type="button" class="user-actions__btn">
+                                        <img src="./assets/icons/search-icon.svg"
+                                        class="user-actions__icon"
+                                        width="30"
+                                        height="30"
+                                        loading="lazy"
+                                        >
+                                    </button>
+                                </li>
+                            </ul>
+
                             <button type="button" class="burger" aria-label="Open menu">
                                 <img src="./assets/icons/menu-burger-icon.svg"
                                 class="burger__icon"
@@ -157,6 +190,7 @@
                                 height="25"
                                 loading="lazy">
                             </button>
+
                         </div>
                     </div>
                 </div>

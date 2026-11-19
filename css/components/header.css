@@ -9,6 +9,10 @@
     justify-content: space-between;
 }
 
+.header__mobile-burger{
+    display: none;
+}
+
 .social, .user-actions{
     display: flex;
     align-items: center;
@@ -66,31 +70,40 @@
     height: 2rem;
 }
 
-
+.user-actions__item,
+.user-actions__icon,
+.burger{
+  flex-shrink: 0;
+}
 
 /* --------header-bottom-------- */
 
 .header__bottom-inner {
-    padding: 4rem 0;
+    padding: 3rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .header__logo-image {
-    width: 25rem;
+    width: clamp(12.5rem, 38vw, 18rem);
     height: auto;
 }
 
 .header__menu {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 9rem;
+}
+
+.nav{
+    width: auto;
 }
 
 .nav__list {
     display: flex;
-    gap: 9rem;
+    justify-content: space-between;
+    gap: 7rem;
 }
 
 .nav__link {
@@ -107,7 +120,75 @@
     color: var(--color-accent);
 }
 
+.burger{
+    margin-left: 3rem;
+}
+
 .burger__icon{
     width: 2.5rem;
     height: 2.5rem;
+}
+
+@media (max-width: 1279px) {
+    .nav__list{
+    gap: 4rem;
+    }
+    .nav__link{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .desktop-only{
+        display: none;
+    }
+    .mobile-only{
+        display: flex !important;
+    }
+    .user-actions__icon, .burger__icon{
+    width: 3.5rem;
+    height: 3.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__bottom-inner{
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 575px) {
+    :root {
+        --container-padding-x: 12px;
+    }
+
+    .header__bottom-inner {
+        padding: min(1.8rem, 18px) 0;
+        gap: 12px;
+    }
+
+    .header__logo {
+        width: min(15rem, 150px);
+        min-width: 100px;
+    }
+
+    .user-actions__item {
+        padding: 0 min(1rem, 10px);
+    }
+
+    .user-actions__link,
+    .user-actions__btn {
+        padding: 0.4rem 0;
+    }
+
+    .burger {
+        margin-left: 0;
+        padding: 0.4rem 0 0.4rem min(1rem, 10px);
+    }
+
+    .user-actions__icon,
+    .burger__icon {
+        width: min(2.8rem, 32px);
+        height: min(2.8rem, 32px);
+    }
 }

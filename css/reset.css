@@ -92,6 +92,8 @@ label {
 
 button {
   -webkit-tap-highlight-color: transparent;
+  padding: 0;
+  background-color: transparent;
 }
 
 :where([fill]:not(

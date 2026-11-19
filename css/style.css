@@ -65,4 +65,9 @@ a{
 button{
     border: none;
     letter-spacing: 0.15rem;
+    flex-shrink: 0;
+}
+
+.mobile-only{
+    display: none !important;
 }
